@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ra.edu.dto.ApiResponse;
 import ra.edu.dto.InstructorCreateRequest;
-import ra.edu.model.Instructor;
+import ra.edu.entity.Instructor;
 import ra.edu.service.InstructorService;
 
 import java.util.List;

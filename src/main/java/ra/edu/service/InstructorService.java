@@ -3,7 +3,7 @@ package ra.edu.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ra.edu.dto.InstructorCreateRequest;
-import ra.edu.model.Instructor;
+import ra.edu.entity.Instructor;
 import ra.edu.repository.InstructorRepository;
 
 import java.util.List;

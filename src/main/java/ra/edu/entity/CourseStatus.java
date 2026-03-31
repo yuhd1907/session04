@@ -1,4 +1,4 @@
-package ra.edu.model;
+package ra.edu.entity;
 
 public enum CourseStatus {
     ACTIVE, INACTIVE, COMPLETED, CANCELLED

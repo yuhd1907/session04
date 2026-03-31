@@ -3,7 +3,6 @@ package ra.edu.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ra.edu.model.Instructor;
 
 @Data
 @NoArgsConstructor

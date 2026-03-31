@@ -1,4 +1,4 @@
-package ra.edu.model;
+package ra.edu.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,19 +9,26 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "students")
+@Table(name = "courses")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Student {
+public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String title;
 
-    @OneToMany(mappedBy = "student")
+    @Enumerated(EnumType.STRING)
+    private CourseStatus courseStatus;
+
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "instructor_id", nullable = false)
+    private Instructor instructor;
+
+    @OneToMany(mappedBy = "course")
     List<StudentEnrollment> studentEnrollments;
 }

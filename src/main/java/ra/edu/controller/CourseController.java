@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ra.edu.dto.ApiResponse;
-import ra.edu.model.Course;
+import ra.edu.entity.Course;
 import ra.edu.service.CourseService;
 
 import java.util.List;

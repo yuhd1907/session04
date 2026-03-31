@@ -1,4 +1,4 @@
-package ra.edu.model;
+package ra.edu.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
