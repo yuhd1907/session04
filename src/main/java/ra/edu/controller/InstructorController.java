@@ -43,30 +43,4 @@ public class InstructorController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(new ApiResponse<>(true, "Created instructor successfully", created));
     }
-
-//    @PutMapping("/{id}")
-//    public ResponseEntity<ApiResponse<Instructor>> updateInstructor(@RequestBody Instructor instructor, @PathVariable int id) {
-//        try {
-//            Instructor updatedInstructor = instructorService.updateInstructor(instructor, id);
-//            return ResponseEntity.ok(
-//                    new ApiResponse<>(true, "Instructor updated", instructor)
-//            );
-//        } catch (RuntimeException e) {
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-//                    .body(new ApiResponse<>(false, e.getMessage(), null));
-//        }
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public ResponseEntity<ApiResponse<Instructor>> deleteInstructor(@PathVariable int id) {
-//        try {
-//            Instructor deleted = instructorService.deleteInstructor(id);
-//            return ResponseEntity.ok(
-//                    new ApiResponse<>(true, "Instructor deleted", deleted)
-//            );
-//        } catch (RuntimeException e) {
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-//                    .body(new ApiResponse<>(false, e.getMessage(), null));
-//        }
-//    }
 }
